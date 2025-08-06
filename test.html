@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="test" href="test.css">
+    <title>世界一甘いお店</title>
+  </head>
+  <body>
+   <header>
+   <h2>世界一甘いお店</h2>
+   </header>
+  <aside>
+  <ul>
+    <li><a href="#">トップ</a></li>
+    <li><a href="#">新着情報</a></li>
+    <li><a href="#">おすすめスイーツ</a></li>
+    <li><a href="#">お問合せ</a></li>
+  </ul>
+  </aside>
+  <main>
+  <form action="/send" method="post">
+   <div class="table-wrap">
+   <table border="4">
+     <tr>
+       <th>お名前</th>
+       <td>
+        <input type="text" size="40" name="username">
+       </td>
+     </tr>
+     <tr>
+       <th>お近くのお店</th>  
+       <td>
+        <select name="area">
+          <option value="hokkaido-tohoku">北海道・東北</option>
+          <option value="kanto">関東</option>
+          <option value="chubu">中部</option>
+          <option value="kansai">関西</option>
+          <option value="chugoku-shikoku">中国・四国</option>
+          <option value="kyusyu-okinawa">九州・沖縄</option>
+        </select>
+       </td>
+     </tr>
+     <tr>
+       <th>電話</th>   
+       <td>
+        <input type="text" size="40" name="phoner">
+       </td>
+     </tr>
+     <tr>
+       <th>電話番号</th>  
+       <td>
+        <input type="text" size="40" name="phonenumber">
+       </td>
+     </tr>
+     <tr>
+       <th>メールアドレス</th>    
+       <td>
+        <input type="text" size="40" name="email">
+       </td>
+     </tr>
+     <tr>
+       <th>お問い合せ種別</th>      
+     <td>
+       <input type="radio" id="product" name="inquiry">
+       <label for="product">商品について</label>
+       <input type="radio" id="staff" name="inquiry">
+       <label for="staff">従業員について</label>
+     </td>
+     </tr>
+     <tr>
+       <th>お問い合せ内容</th>   
+       <td>
+        <textarea cols="30" rows="5" placeholder="詳細を入力してください">
+        </textarea>
+       </td>
+     </tr>
+   </table>
+   <button>送信</button>
+   </div>
+  </form>
+  </main>
+  <footer>
+  </footer>
+  </body>
+</html>
